@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maycon Marinho dos Santos | Desenvolvedor</title>
+
+  <!-- Fonts / Libs -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="main.css"/>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+  <div class="container">
+    <!-- Nome mais chamativo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <span class="brand-text ms-2">Maycon Marinho dos Santos</span>
+    </a>
+
+    <!-- Botão de menu mobile -->
+    <button class="navbar-toggler custom-toggler collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+      <span class="toggler-bar"></span>
+      <span class="toggler-bar"></span>
+      <span class="toggler-bar"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologias</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+
+        <!-- Botão Contrate-me -->
+        <li class="nav-item ms-lg-3">
+          <a href="#contato" class="btn-hire">Contrate-me!</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- ===== HERO / TOPO ===== -->
+  <header id="sobre" class="hero">
+    <!-- partículas só no topo -->
+    <div id="tsparticles" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <!-- Coluna texto -->
+        <div class="col-lg-7">
+          <h1 class="hero-title">Construo projetos de tecnologia e soluções de dados</h1>
+          <p class="hero-type" id="typewriter" aria-live="polite"></p>
+
+          <div class="hero-badges">
+            <span class="badge-soft"><span class="badge-dot"></span> Disponível para contratação</span>
+            <span class="badge-soft"><i class="fa-solid fa-shield-halved"></i> Back-end</span>
+            <span class="badge-soft"><i class="fa-solid fa-laptop-code"></i> Front-end</span>
+            <span class="badge-soft"><i class="fa-solid fa-database"></i> Dados</span>
+          </div>
+
+          <p class="lead mb-3">
+            Sou desenvolvedor full stack com foco em <strong>JavaScript/Node.js</strong>, bancos relacionais
+            e integrações. Gosto de criar interfaces limpas e APIs bem estruturadas.
+          </p>
+
+          <div class="hero-cta">
+            <a href="Currículo de Maycon (CV).pdf" download class="btn btn-custom">
+              <i class="fa-solid fa-file-arrow-down me-2"></i> Download Currículo
+            </a>
+            <a href="mailto:maiconmarinho0103@hotmail.com" class="btn btn-ghost">
+              <i class="fa-solid fa-paper-plane me-2"></i> Enviar E-mail
+            </a>
+            <a href="https://www.linkedin.com/in/maycon-marinho-dos-santos-99b145269/" target="_blank" rel="noopener" class="btn btn-ghost">
+              <i class="fab fa-linkedin me-2"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna visual -->
+        <div class="col-lg-5 hero-visual">
+          <div class="glass-card">
+            <div class="ring"></div>
+            <div class="profile-wrap">
+              <img src="imgMaycon.jpeg.jpg" alt="Foto de perfil de Maycon Marinho dos Santos" class="profile-img"/>
+
+              <!-- Chips flutuantes -->
+              <div class="chips" aria-hidden="true">
+                <span class="chip c1"><i class="fa-brands fa-js me-1"></i>JavaScript</span>
+                <span class="chip c2"><i class="fa-brands fa-node-js me-1"></i>Node.js</span>
+                <span class="chip c3"><i class="fa-solid fa-database me-1"></i>SQL</span>
+                <span class="chip c4"><i class="fa-brands fa-python me-1"></i>Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Indicador de scroll -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="mouse"><div class="wheel"></div></div>
+        <span>Role para ver mais</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HABILIDADES ===== -->
+  <section id="skills" class="container">
+    <h2 class="section-title">Habilidades</h2>
+    <div class="row">
+      <!-- SOFT -->
+      <div class="col-md-6 mb-3">
+        <h4 style="color:#fff; margin-bottom:12px;">Soft Skills</h4>
+        <ul class="skill-list">
+          <li class="skill-item">
+            <span class="skill-icon"><i class="fa-solid fa-comments"></i></span>
+            <div class="skill-text"><strong>Comunicação</strong><p class="small">Explico ideias técnicas de forma clara para times e clientes.</p></div>
+          </li>
+          <li class="skill-item">
+            <span class="skill-icon"><i class="fa-solid fa-users"></i></span>
+            <div class="skill-text"><strong>Trabalho em equipe</strong><p class="small">Colaboro bem, aceito feedback e ajudo colegas a evoluir.</p></div>
+          </li>
+          <li class="skill-item">
+            <span class="skill-icon"><i class="fa-solid fa-lightbulb"></i></span>
+            <div class="skill-text"><strong>Resolução de problemas</strong><p class="small">Analiso causas, testo soluções e aplico correções eficazes.</p></div>
+          </li>
+          <li class="skill-item">
+            <span class="skill-icon"><i class="fa-solid fa-clock"></i></span>
+            <div class="skill-text"><strong>Gestão de tempo</strong><p class="small">Organizo tarefas com priorização e entrego no prazo.</p></div>
+          </li>
+          <li class="skill-item">
+            <span class="skill-icon"><i class="fa-solid fa-brain"></i></span>
+            <div class="skill-text"><strong>Pensamento crítico</strong><p class="small">Avalio trade-offs e escolho soluções sustentáveis.</p></div>
+          </li>
+          <li class="skill-item">
+            <span class="skill-icon"><i class="fa-solid fa-handshake"></i></span>
+            <div class="skill-text"><strong>Adaptabilidade</strong><p class="small">Aprendo rápido e me adapto a novas ferramentas e processos.</p></div>
+          </li>
+        </ul>
+      </div>
+      <!-- HARD -->
+      <div class="col-md-6 mb-3">
+        <h4 style="color:#fff; margin-bottom:12px;">Hard Skills</h4>
+        <ul class="skill-list">
+          <li class="skill-item"><span class="skill-icon"><i class="fa-brands fa-node-js"></i></span><div class="skill-text"><strong>Node.js / Express</strong><p class="small">APIs REST, rotas e middlewares.</p></div></li>
+          <li class="skill-item"><span class="skill-icon"><i class="fa-solid fa-database"></i></span><div class="skill-text"><strong>MySQL / PostgreSQL</strong><p class="small">Modelagem, índices e queries.</p></div></li>
+          <li class="skill-item"><span class="skill-icon"><i class="fa-brands fa-bootstrap"></i></span><div class="skill-text"><strong>Bootstrap</strong><p class="small">Layouts responsivos.</p></div></li>
+          <li class="skill-item"><span class="skill-icon"><i class="fa-brands fa-git-alt"></i></span><div class="skill-text"><strong>Git</strong><p class="small">Fluxo colaborativo.</p></div></li>
+          <li class="skill-item"><span class="skill-icon"><i class="fa-solid fa-server"></i></span><div class="skill-text"><strong>API Design</strong><p class="small">RESTful e auth básica.</p></div></li>
+          <li class="skill-item"><span class="skill-icon"><i class="fa-brands fa-figma"></i></span><div class="skill-text"><strong>Figma</strong><p class="small">Protótipos e leitura.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECNOLOGIAS ===== -->
+  <section id="tecnologias" class="container">
+    <h2 class="section-title">Tecnologias</h2>
+    <div class="tech-panel">
+      <p class="tech-panel-desc">Ferramentas e linguagens que utilizo com frequência — front, back e dados.</p>
+      <div class="tech-grid" role="list" aria-label="Lista de tecnologias">
+        <div class="tech-card" role="listitem" aria-label="HTML">
+          <div class="tech-bubble" title="HTML"><i class="fab fa-html5" aria-hidden="true"></i></div><p>HTML</p>
+        </div>
+        <div class="tech-card" role="listitem" aria-label="CSS">
+          <div class="tech-bubble" title="CSS"><i class="fab fa-css3-alt" aria-hidden="true"></i></div><p>CSS</p>
+        </div>
+        <div class="tech-card" role="listitem" aria-label="JavaScript">
+          <div class="tech-bubble" title="JavaScript"><i class="fab fa-js" aria-hidden="true"></i></div><p>JavaScript</p>
+        </div>
+        <div class="tech-card" role="listitem" aria-label="MySQL e PostgreSQL">
+          <div class="tech-bubble" title="Databases"><i class="fas fa-database" aria-hidden="true"></i></div><p>MySQL / PostgreSQL</p>
+        </div>
+        <div class="tech-card" role="listitem" aria-label="Bootstrap">
+          <div class="tech-bubble" title="Bootstrap"><i class="fab fa-bootstrap" aria-hidden="true"></i></div><p>Bootstrap</p>
+        </div>
+        <div class="tech-card" role="listitem" aria-label="Node.js">
+          <div class="tech-bubble" title="Node.js"><i class="fab fa-node-js" aria-hidden="true"></i></div><p>Node.js</p>
+        </div>
+        <div class="tech-card" role="listitem" aria-label="Pentaho">
+          <div class="tech-bubble" title="Pentaho"><i class="fas fa-cogs" aria-hidden="true"></i></div><p>Pentaho</p>
+        </div>
+        <div class="tech-card" role="listitem" aria-label="Python">
+          <div class="tech-bubble" title="Python"><i class="fab fa-python" aria-hidden="true"></i></div><p>Python</p>
+        </div>
+        <div class="tech-card" role="listitem" aria-label="Figma">
+          <div class="tech-bubble" title="Figma"><i class="fab fa-figma" aria-hidden="true"></i></div><p>Figma</p>
+        </div>
+        <div class="tech-card" role="listitem" aria-label="Figma">
+          <div class="tech-bubble" title="Figma"><i class="fab fa-github"></i></div><p>GitHub</p>
+        </div>
+        <div class="tech-card" role="listitem" aria-label="Figma">
+          <div class="tech-bubble" title="Figma"><i class="fa-brands fa-git-alt"></i></div><p>Git</p>
+        </div>
+        <div class="tech-card" role="listitem" aria-label="Figma">
+          <div class="tech-bubble" title="Figma"><i class="fab fa-react"></i></div><p>React.js</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- ===== PROJETOS (mantidos) ===== -->
+<div id="projetos" class="container">
+  <h2 class="section-title">Projetos</h2>
+  <div class="row mb-4">
+    <div class="col-md-4 d-flex">
+      <div class="card card-project h-100">
+        <img src="projeto1.jpg" alt="Desenvolvimento Web" class="project-img">
+        <div class="p-3">
+          <h5>Desenvolvimento Web</h5>
+          <p>Um site feito com HTML, CSS e JavaScript que visa atender a ONG Projeto Vida.</p>
+          
+          <!-- 🔹 Container dos botões -->
+          <div class="btn-group">
+            <a href="https://youtu.be/W6KxXDVezDM" class="btn btn-custom">
+              <i class="fa fa-eye"></i> Ver Projeto
+            </a>
+            <a href="https://github.com/MayconMarinho/Site-com-HTML--CSS-e-JavaScript" class="btn btn-custom">
+              <i class="fab fa-github"></i> Repositório
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 d-flex">
+      <div class="card card-project h-100">
+        <img src="projeto3.jpg" alt="Desenvolvimento Mobile" class="project-img">
+        <div class="p-3">
+          <h5>Desenvolvimento Mobile</h5>
+          <p>Um aplicativo feito com Java utilizando o Android Studio com a finalidade de otimizar a comunicação entre a população e o governo.</p>
+          
+          <div class="btn-group">
+            <a href="https://youtu.be/jbN2mdfHxxg" class="btn btn-custom">
+              <i class="fa fa-eye"></i> Ver Projeto
+            </a>
+            <a href="https://github.com/MayconMarinho/Desenvolvimento-Mobile" class="btn btn-custom">
+              <i class="fab fa-github"></i> Repositório
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 d-flex">
+      <div class="card card-project h-100">
+        <img src="bora.jpg" alt="CRUDE" class="project-img">
+        <div class="p-3">
+          <h5>CRUDE</h5>
+          <p>Sistema criado para permitir que uma loja possa receber os pedidos de seus clientes e gerenciá-los de maneira eficiente e produtiva.</p>
+          
+          <div class="btn-group">
+            <a href="https://www.youtube.com/watch?v=SWuP_XQXT7E" class="btn btn-custom">
+              <i class="fa fa-eye"></i> Ver Projeto
+            </a>
+            <a href="https://github.com/MayconMarinho/CRUDE" class="btn btn-custom">
+              <i class="fab fa-github"></i> Repositório
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="projetos" class="container">
+  <div class="row mb-4">
+    <div class="col-md-4 d-flex">
+      <div class="card card-project h-100">
+        <img src="projeto4.jpeg" alt="Sistema de RH Online" class="project-img">
+        <div class="p-3">
+          <h5>Sistema de RH Online</h5>
+          <p>Sistema que visa agilizar e automatizar os processos de gestão e contratação de novos colaboradores com o auxílio de ferramentas para filtragem de dados.</p>
+          
+          <!-- 🔹 Container dos botões -->
+          <div class="btn-group">
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7363662926143983616/" class="btn btn-custom">
+              <i class="fa fa-eye"></i> Ver Projeto
+            </a>
+            <a href="https://github.com/MayconMarinho/Sistema-de-RH-Online" class="btn btn-custom">
+              <i class="fab fa-github"></i> Repositório
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 d-flex">
+      <div class="card card-project h-100">
+        <img src="projeto5.jpg" alt="API Rest" class="project-img">
+        <div class="p-3">
+          <h5>API Rest</h5>
+          <p>Uma API criada com o objetivo de garantir a comunicação cliente-servidor e permitir o gerenciamento de dados de uma rede de lojas.</p>
+          
+          <div class="btn-group">
+            <a href="https://youtu.be/m1-D-PPLKDU" class="btn btn-custom">
+              <i class="fa fa-eye"></i> Ver Projeto
+            </a>
+            <a href="" class="btn btn-custom">
+              <i class="fab fa-github"></i> Repositório
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 d-flex">
+      <div class="card card-project h-100">
+        <img src="projeto6.jpeg" alt="Em Breve" class="project-img">
+        <div class="p-3">
+          <h5>Em Breve</h5>
+          <p>Em breve novos projetos estarão disponíveis aqui. Aguarde...</p>
+          
+          <div class="btn-group">
+            <a href="https://www.youtube.com/watch?v=SWuP_XQXT7E" class="btn btn-custom">
+              <i class="fa fa-eye"></i> Ver Projeto
+            </a>
+            <a href="" class="btn btn-custom">
+              <i class="fab fa-github"></i> Repositório
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    <div class="more-projects">
+    <a href="https://github.com/MayconMarinho" target="_blank" class="btn-github-highlight">
+      <i class="fab fa-github"></i> Veja todos os meus projetos no GitHub
+    </a>
+  </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="contato" class="footer-modern">
+    <div class="footer-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" width="100%" height="80">
+        <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440 80 L0 80 Z" fill="#0f0f10" opacity="0.95"></path>
+      </svg>
+    </div>
+
+    <div class="container py-5">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h3 class="footer-title">Contato</h3>
+          <p class="footer-desc">Quer trabalhar comigo ou trocar uma ideia sobre projetos? Me chama — respondo rápido.</p>
+
+          <div class="contact-item">
+            <i class="fas fa-envelope contact-ico"></i>
+            <a href="mailto:maiconmarinho0103@hotmail.com" class="contact-link">maiconmarinho0103@hotmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone contact-ico"></i>
+            <a href="tel:+5511962952205" class="contact-link">(11) 9 6295-2205</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin contact-ico"></i>
+            <a href="https://www.linkedin.com/in/maycon-marinho-dos-santos-99b145269/" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/maycon-marinho</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <h5 class="footer-subtitle">Links Rápidos</h5>
+          <ul class="footer-links list-unstyled">
+            <li><a href="#sobre" class="footer-link">Sobre</a></li>
+            <li><a href="#skills" class="footer-link">Habilidades</a></li>
+            <li><a href="#projetos" class="footer-link">Projetos</a></li>
+            <li><a href="#tecnologias" class="footer-link">Tecnologias</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h5 class="footer-subtitle">Fale comigo</h5>
+          <form id="footerContactForm" class="footer-form" novalidate>
+            <div class="mb-2"><input type="text" class="form-control form-control-dark" id="f-name" placeholder="Seu nome" required></div>
+            <div class="mb-2"><input type="email" class="form-control form-control-dark" id="f-email" placeholder="Seu e-mail" required></div>
+            <div class="mb-2"><textarea id="f-message" class="form-control form-control-dark" rows="3" placeholder="Mensagem" required></textarea></div>
+            <div class="d-grid"><button type="submit" class="btn btn-custom btn-send">Enviar Mensagem</button></div>
+          </form>
+        </div>
+      </div>
+
+      <hr class="footer-sep">
+
+      <div class="d-flex justify-content-between align-items-center pt-3 flex-column flex-md-row gap-3">
+        <p class="mb-0 copyright">&copy; 2025 - Maycon Marinho dos Santos</p>
+        <div class="socials">
+          <a class="social-btn" href="https://www.linkedin.com/in/maycon-marinho-dos-santos-99b145269/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a class="social-btn" href="https://github.com/MayconMarinho" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a class="social-btn" href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de sucesso -->
+    <div class="modal fade" id="footerSuccessModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-body text-center py-4">
+            <i class="fas fa-check-circle fa-3x mb-3" style="color:#e43a3a;"></i>
+            <h5 class="mb-2">Mensagem enviada</h5>
+            <p class="small mb-3">Obrigado! Vou responder em breve.</p>
+            <button class="btn btn-custom" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+   <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
