@@ -1,3 +1,25 @@
+// ===== MODAL: SITE EM DESENVOLVIMENTO =====
+(function () {
+
+  // Aguarda o carregamento completo da página
+  window.addEventListener('load', function () {
+
+    // Seleciona o modal
+    const modalEl = document.getElementById('developmentModal');
+
+    // Verifica se o modal existe
+    if (!modalEl) return;
+
+    // Cria a instância do modal Bootstrap
+    const devModal = new bootstrap.Modal(modalEl);
+
+    // Exibe o modal automaticamente
+    devModal.show();
+
+  });
+
+})();
+
 // ===== Navbar: encolher ao rolar + destacar link ativo =====
 (function(){
   // Seleciona a barra de navegação principal
